@@ -1,0 +1,11 @@
+{
+	"cSpell.ignoreWords": ["matchfixtures"],
+	"cSpell.customDictionaries": {
+		"custom-dictionary-workspace": {
+			"name": "custom-dictionary-workspace",
+			"path": "${workspaceFolder:afriskaut-tag}/.cspell/custom-dictionary-workspace.txt",
+			"addWords": true,
+			"scope": "workspace"
+		}
+	}
+}

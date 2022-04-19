@@ -1,0 +1,33 @@
+.players {
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px !important;
+    text-align: left !important;
+  }
+
+  .position {
+    text-align: center;
+    width: 25px !important;
+    margin-right: 5px;
+    background-color: #2b52ba;
+    color: aliceblue;
+    font-size: 9px;
+    border-radius: 4px;
+    line-height: 18px;
+  }
+
+  &.away {
+    color: #000;
+    .position {
+      background-color: red;
+    }
+  }
+}

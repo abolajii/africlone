@@ -1,0 +1,42 @@
+.card {
+    padding: 10px 12px;
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    scale: .9;
+
+    &:hover {
+        cursor: pointer;
+        
+        box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    }
+
+    .card-title {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        padding: 3px 0;
+
+        .name {
+            font-size: 13px;
+            margin: 10px 0 1px 0 !important;
+            
+        }
+
+        .subtitle {
+            font-size: 12px;
+        }
+
+        div {
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            right: 10%;
+            top: 5%;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+}

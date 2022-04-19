@@ -1,0 +1,380 @@
+.start-match {
+  p {
+    font-size: 12px;
+  }
+
+  .timeline,
+  .events {
+    border: 2px solid #eee;
+    box-shadow: 0 0 3px 0 rgba(183, 192, 206, 0.2);
+    border-radius: 4px;
+    padding-bottom: 1rem;
+  }
+
+  .timeline {
+    padding: 0;
+
+    td {
+      font-size: 12px !important;
+
+      i {
+        cursor: pointer;
+
+        font-size: 14px;
+
+        &:hover {
+          color: #2b52ba;
+        }
+
+        &.mdi-trash-can {
+          margin-left: 14px;
+        }
+      }
+    }
+
+    th {
+      font-size: 12px !important;
+    }
+
+    tr {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .events {
+    p {
+      font-size: 12px;
+      margin-top: 0.6rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 13px;
+      line-height: 26px;
+    }
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .field {
+    position: relative;
+
+    img {
+      position: relative;
+    }
+
+    .field-players {
+      position: absolute;
+      top: 0;
+      width: 94%;
+
+      height: 99%;
+      z-index: 1000;
+
+      .board {
+        height: 100%;
+        position: relative;
+
+        span {
+          font-size: 10px;
+          border: 1px solid #eee;
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+          text-align: center;
+          color: #fff;
+          font-weight: 600;
+          padding: 8px 8px;
+          position: absolute;
+        }
+
+        .home {
+          span {
+            background-color: #2b52ba;
+
+            &.gk {
+              top: 45% !important;
+              left: 8%;
+            }
+
+            &.lb {
+              top: 8%;
+              left: 28%;
+            }
+
+            &.rb {
+              bottom: 8%;
+              left: 28%;
+            }
+
+            &.cb1 {
+              top: 30%;
+              left: 23%;
+            }
+
+            &.cb2 {
+              bottom: 30%;
+              left: 23%;
+            }
+
+            &.lm {
+              top: 18%;
+              left: 48%;
+            }
+
+            &.cm {
+              bottom: 45%;
+              left: 48%;
+            }
+
+            &.rm {
+              bottom: 20%;
+              left: 47%;
+            }
+
+            &.lf {
+              top: 16%;
+              right: 20%;
+            }
+
+            &.rf {
+              bottom: 16%;
+              right: 20%;
+            }
+
+            &.cf {
+              bottom: 45%;
+              right: 18%;
+            }
+          }
+
+          span {
+            background-color: #2b52ba;
+
+            &.gk-a {
+              top: 45% !important;
+              left: 8%;
+              background-color: orange;
+            }
+
+            &.lb-a {
+              top: 8%;
+              left: 28%;
+              background-color: orange;
+            }
+
+            &.rb-a {
+              bottom: 8%;
+              left: 28%;
+              background-color: orange;
+            }
+
+            &.cb1-a {
+              top: 30%;
+              left: 23%;
+              background-color: orange;
+            }
+
+            &.cb2-a {
+              bottom: 30%;
+              left: 23%;
+              background-color: orange;
+            }
+
+            &.lm-a {
+              top: 18%;
+              left: 48%;
+              background-color: orange;
+            }
+
+            &.cm-a {
+              bottom: 45%;
+              left: 48%;
+              background-color: orange;
+            }
+
+            &.rm-a {
+              bottom: 20%;
+              left: 47%;
+              background-color: orange;
+            }
+
+            &.lf-a {
+              top: 16%;
+              right: 20%;
+              background-color: orange;
+            }
+
+            &.rf-a {
+              bottom: 16%;
+              right: 20%;
+              background-color: orange;
+            }
+
+            &.cf-a {
+              bottom: 45%;
+              right: 18%;
+              background-color: orange;
+            }
+          }
+        }
+
+        .away {
+          span {
+            background-color: red;
+
+            &.gk {
+              top: 45% !important;
+              right: 8%;
+            }
+
+            &.lb {
+              bottom: 8%;
+              right: 28%;
+            }
+
+            &.rb {
+              top: 8%;
+              right: 28%;
+            }
+
+            &.cb1 {
+              top: 30%;
+              right: 23%;
+            }
+
+            &.cb2 {
+              bottom: 30%;
+              right: 23%;
+            }
+
+            &.lm {
+              bottom: 18%;
+              right: 48%;
+            }
+
+            &.cm {
+              bottom: 45%;
+              right: 48%;
+            }
+
+            &.rm {
+              top: 18%;
+              right: 48%;
+            }
+
+            &.lf {
+              bottom: 18%;
+              left: 20%;
+            }
+
+            &.rf {
+              top: 18%;
+              left: 20%;
+            }
+
+            &.cf {
+              bottom: 45%;
+              left: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .players {
+    cursor: pointer !important;
+    width: 100%;
+    font-size: 13px;
+
+    &:hover {
+      color: #2b52ba;
+    }
+
+    span {
+      display: inline-block;
+      width: 15%;
+      text-align: center;
+    }
+
+    // &.away {
+    //     color: red;
+    // }
+  }
+
+  .MuiChip-root {
+    margin-right: 7px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Context menu css */
+
+nav.react-contextmenu {
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: calc(100% + 10px);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px 0;
+  z-index: 99;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.react-contextmenu .react-contextmenu-item:hover {
+  background: #cccccc;
+}
+
+.react-contextmenu-item:hover:not(.react-contextmenu-item--disabled) {
+  background-color: #f1f1f1;
+}
+
+.react-contextmenu .react-contextmenu-item {
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+  position: relative;
+  margin-bottom: 2px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.react-contextmenu-item span {
+  margin-left: 10px;
+}
+.react-contextmenu-item svg {
+  font-size: 14px;
+}
+.react-contextmenu-item .copy {
+  color: skyblue;
+}
+.react-contextmenu-item .delete {
+  color: red;
+}
+.react-contextmenu-item .send {
+  color: blue;
+}
+.react-contextmenu-item .share {
+  color: green;
+}
+.react-contextmenu-item .watchlist {
+  color: rebeccapurple;
+}

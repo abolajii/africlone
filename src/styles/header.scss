@@ -1,0 +1,41 @@
+.nav-container {
+    padding: 0 !important;
+    font-size: 14px;
+
+    &.nav-container {
+        background-color: #2B52BA;
+    }
+
+    nav {
+        width: 70%;
+        margin: 0 auto;
+        height: 3.5rem;
+
+        a {
+            color: #fff;
+        }
+
+        d-none {
+            visibility: hidden;
+        }
+
+        .navbar-nav {
+
+            a {
+                margin: 0 14px;
+                padding: 3px;
+                
+                &.competitions {
+                    min-width: 6rem;
+                    padding: 3px;
+                }
+                &.active {
+                    transform: scale(1.1);
+                    font-weight: 500;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.starting-line-up {
+    width: 80%;
+
+    ul {
+        list-style-type: none;
+        font-size: 13px;
+
+        li {
+            position: relative;
+            margin-bottom: 1em;
+            small {
+                position: absolute;
+                bottom: -18%;
+                left: 27%;
+                color: #2B52BA;
+                text-transform: capitalize;
+            }
+            span {
+               margin-right: 5px;
+            }
+        }
+    }
+
+    button {
+        font-size: 13px;
+    }
+}

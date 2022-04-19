@@ -1,0 +1,19 @@
+.create-team {
+  width: 90%;
+
+  form {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    label {
+      font-size: 12.5px;
+    }
+
+    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+      transform: translate(18px, -6px) scale(0.75);
+    }
+
+    .MuiTextField-root {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.add-match {
+    width: 70%;
+}
+.modal {
+    background: rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+
+.modal-content {
+    width: 20%;
+    height: max-content;
+}

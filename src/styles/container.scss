@@ -1,0 +1,20 @@
+.main-container {
+    // width: 70%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    min-height: 90vh !important;
+    height: 100%;
+    position: relative;
+    padding-bottom: 4rem;
+
+    .breadcrumb {
+        background-color: #fff;
+        color: #2B52BA;
+        font-size: 14px;
+        width: 100%; 
+
+        ul {
+            float: right;
+        }
+    }
+}

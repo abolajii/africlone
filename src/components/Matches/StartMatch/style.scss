@@ -1,0 +1,519 @@
+.modal {
+  background: rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.startLineUpDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.finish {
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.delete-tag {
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  padding: 3px 0;
+}
+
+.div-div {
+  width: 242px;
+  border-radius: 2px;
+  height: 79px;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+}
+
+#startLineUp {
+  font-size: 8px;
+  color: #393b3d;
+  font-weight: 500;
+}
+
+.rPlayer {
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+}
+
+.modal_0 {
+  background: rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.start-match {
+  p {
+    font-size: 12px;
+  }
+
+  .timeline,
+  .events {
+    border: 2px solid #eee;
+    box-shadow: 0 0 3px 0 rgba(183, 192, 206, 0.2);
+    border-radius: 4px;
+    padding-bottom: 1rem;
+  }
+
+  .timeline {
+    padding: 0;
+
+    td {
+      font-size: 12px !important;
+
+      i {
+        cursor: pointer;
+
+        font-size: 14px;
+
+        &:hover {
+          color: #2b52ba;
+        }
+
+        &.mdi-trash-can {
+          margin-left: 14px;
+        }
+      }
+    }
+
+    th {
+      font-size: 12px !important;
+    }
+
+    tr {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .events {
+    p {
+      font-size: 12px;
+      margin-top: 0.6rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 13px;
+      line-height: 26px;
+    }
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .field {
+    position: relative;
+
+    img {
+      position: relative;
+    }
+
+    .field-players {
+      position: absolute;
+      top: 0;
+      width: 94%;
+
+      height: 99%;
+
+      .board {
+        height: 100%;
+        position: relative;
+
+        span {
+          font-size: 10px;
+          border: 1px solid #eee;
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+          text-align: center;
+          color: #fff;
+          font-weight: 600;
+          padding: 8px 8px;
+          position: absolute;
+        }
+
+        .home {
+          span {
+            background-color: #2b52ba;
+
+            &._0 {
+              top: 45% !important;
+              left: 8%;
+            }
+
+            &._1 {
+              top: 8%;
+              left: 28%;
+            }
+
+            &._4 {
+              bottom: 8%;
+              left: 28%;
+            }
+
+            &._2 {
+              top: 30%;
+              left: 23%;
+            }
+
+            &._3 {
+              bottom: 30%;
+              left: 23%;
+            }
+
+            &._5 {
+              top: 18%;
+              left: 48%;
+            }
+
+            &._6 {
+              bottom: 45%;
+              left: 48%;
+            }
+
+            &._7 {
+              bottom: 20%;
+              left: 47%;
+            }
+
+            &._8 {
+              top: 16%;
+              right: 20%;
+            }
+
+            &._9 {
+              bottom: 16%;
+              right: 20%;
+            }
+
+            &._10 {
+              bottom: 45%;
+              right: 18%;
+            }
+          }
+          span {
+            background-color: #2b52ba;
+
+            &._0_active {
+              top: 45% !important;
+              left: 8%;
+              background-color: orange;
+            }
+
+            &._1_active {
+              top: 8%;
+              left: 28%;
+              background-color: orange;
+            }
+
+            &._4_active {
+              bottom: 8%;
+              left: 28%;
+              background-color: orange;
+            }
+
+            &._2_active {
+              top: 30%;
+              left: 23%;
+              background-color: orange;
+            }
+
+            &._3_active {
+              bottom: 30%;
+              left: 23%;
+              background-color: orange;
+            }
+
+            &._5_active {
+              top: 18%;
+              left: 48%;
+              background-color: orange;
+            }
+
+            &._6_active {
+              bottom: 45%;
+              left: 48%;
+              background-color: orange;
+            }
+
+            &._7_active {
+              bottom: 20%;
+              left: 47%;
+              background-color: orange;
+            }
+
+            &._8_active {
+              top: 16%;
+              right: 20%;
+              background-color: orange;
+            }
+
+            &._9_active {
+              bottom: 16%;
+              right: 20%;
+              background-color: orange;
+            }
+
+            &._10_active {
+              bottom: 45%;
+              right: 18%;
+              background-color: orange;
+            }
+          }
+        }
+
+        .away {
+          span {
+            background-color: red;
+
+            &._0 {
+              top: 45% !important;
+              right: 8%;
+            }
+
+            &._1 {
+              bottom: 8%;
+              right: 28%;
+            }
+
+            &._4 {
+              top: 8%;
+              right: 28%;
+            }
+
+            &._2 {
+              top: 30%;
+              right: 23%;
+            }
+
+            &._3 {
+              bottom: 30%;
+              right: 23%;
+            }
+
+            &._5 {
+              bottom: 18%;
+              right: 48%;
+            }
+
+            &._6 {
+              bottom: 45%;
+              right: 48%;
+            }
+
+            &._7 {
+              top: 18%;
+              right: 48%;
+            }
+
+            &._8 {
+              bottom: 18%;
+              left: 20%;
+            }
+
+            &._9 {
+              top: 18%;
+              left: 20%;
+            }
+
+            &._10 {
+              bottom: 45%;
+              left: 20%;
+            }
+          }
+
+          span {
+            background-color: red;
+
+            &._0_active {
+              top: 45% !important;
+              right: 8%;
+              background-color: orange;
+            }
+
+            &._1_active {
+              bottom: 8%;
+              right: 28%;
+              background-color: orange;
+            }
+
+            &._4_active {
+              top: 8%;
+              right: 28%;
+              background-color: orange;
+            }
+
+            &._2_active {
+              top: 30%;
+              right: 23%;
+              background-color: orange;
+            }
+
+            &._3_active {
+              bottom: 30%;
+              right: 23%;
+              background-color: orange;
+            }
+
+            &._5_active {
+              bottom: 18%;
+              right: 48%;
+              background-color: orange;
+            }
+
+            &._6_active {
+              bottom: 45%;
+              right: 48%;
+              background-color: orange;
+            }
+
+            &._7_active {
+              top: 18%;
+              right: 48%;
+              background-color: orange;
+            }
+
+            &._8_active {
+              bottom: 18%;
+              left: 20%;
+              background-color: orange;
+            }
+
+            &._9_active {
+              top: 18%;
+              left: 20%;
+              background-color: orange;
+            }
+
+            &._10_active {
+              bottom: 45%;
+              left: 20%;
+              background-color: orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .players {
+    cursor: pointer !important;
+    width: 100%;
+    font-size: 13px;
+
+    &:hover {
+      color: #2b52ba;
+    }
+
+    span {
+      display: inline-block;
+      width: 15%;
+      text-align: center;
+    }
+  }
+
+  .MuiChip-root {
+    margin-right: 7px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Context menu css */
+
+nav.react-contextmenu {
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: calc(100% + 10px);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px 0;
+  z-index: 99;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.react-contextmenu .react-contextmenu-item:hover {
+  background: #cccccc;
+}
+
+.react-contextmenu-item:hover:not(.react-contextmenu-item--disabled) {
+  background-color: #f1f1f1;
+}
+
+.react-contextmenu .react-contextmenu-item {
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+  position: relative;
+  margin-bottom: 2px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.react-contextmenu-item span {
+  margin-left: 10px;
+}
+.react-contextmenu-item svg {
+  font-size: 14px;
+}
+.react-contextmenu-item .copy {
+  color: skyblue;
+}
+.react-contextmenu-item .delete {
+  color: red;
+}
+.react-contextmenu-item .send {
+  color: blue;
+}
+.react-contextmenu-item .share {
+  color: green;
+}
+.react-contextmenu-item .watchlist {
+  color: rebeccapurple;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  :nth-child(2) {
+    margin-left: 1rem;
+  }
+}
+
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.team-logo-container {
+  height: 20rem;
+  margin-bottom: 18px;
+}
